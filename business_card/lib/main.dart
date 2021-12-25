@@ -39,39 +39,73 @@ class BusinessCardApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 40.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                      size: 20.0,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      "+55 81 995029086",
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 20.0,
-                        color: Colors.teal.shade900,
-                      ),
-                    )
-                  ],
+              const SizedBox(
+                height: 5,
+              ),
+              Text(
+                'Node.JS, .NET CORE, Flutter',
+                style: TextStyle(
+                  color: Colors.teal[100],
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 19.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10.0),
+              SizedBox(
+                height: 20,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 40.0),
-                child: Row(
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 20.0,
+                  ),
+                  title: Text(
+                    "+55 81 995029086",
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 40.0),
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                    size: 20.0,
+                  ),
+                  title: Text(
+                    "ans3@cin.ufpe.br",
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/*
+  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Icon(
@@ -92,11 +126,5 @@ class BusinessCardApp extends StatelessWidget {
                     )
                   ],
                 ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+
+*/
